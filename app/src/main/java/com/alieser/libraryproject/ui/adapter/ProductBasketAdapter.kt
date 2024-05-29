@@ -88,9 +88,9 @@ class ProductBasketAdapter(var context: Context,val myBasketList : List<ProductB
         holder.basketRowBinding.ivDelete.setOnClickListener {
 
             MaterialAlertDialogBuilder(holder.itemView.context)
-                .setTitle("Delete Product")
-                .setMessage("Are you sure you want to remove the product from the basket?")
-                .setPositiveButton("Yes") {d,i ->
+                .setTitle("eliminar producto")
+                .setMessage("esta seguro de borrar este producto?")
+                .setPositiveButton("Si") {d,i ->
 
                     productBasket.document("${product.productId}").delete()
                 }

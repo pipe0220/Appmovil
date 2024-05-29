@@ -109,17 +109,17 @@
                 android:layout_marginEnd="36dp"
                 android:layout_marginBottom="8dp"
                 android:backgroundTint="@color/app_theme_light"
-                android:tint="#8E8486"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:srcCompat="@drawable/delete_icon" />
+                app:srcCompat="@drawable/delete_icon"
+                app:tint="#8E8486" />
 
             <TextView
                 android:id="@+id/txtProductNameBasketRow"
                 android:layout_width="222dp"
                 android:layout_height="28dp"
                 android:layout_marginStart="16dp"
-                android:text="Product Name"
+                android:text="Nombre del producto"
                 android:textSize="16sp"
                 android:textStyle="bold"
                 app:layout_constraintStart_toEndOf="@+id/ivProductBasketRow"

@@ -31,7 +31,7 @@
 
     <TextView
         android:id="@+id/txtPaymentTitle"
-        android:text="Payment"
+        android:text="Pagos"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -158,7 +158,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="24dp"
-                android:text="Credit Card Information"
+                android:text="Informacion de la Tarjeta"
                 android:textSize="20sp"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toTopOf="@+id/view"
@@ -243,7 +243,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="4dp"
                         android:layout_marginTop="16dp"
-                        android:text="Card Number"
+                        android:text="Numero de Tarjeta"
                         android:textStyle="bold"
                         app:layout_constraintStart_toStartOf="@+id/etCardNumber"
                         app:layout_constraintTop_toTopOf="parent" />
@@ -254,7 +254,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="4dp"
                         android:layout_marginBottom="4dp"
-                        android:text="Expire Date"
+                        android:text="Fecha de Caducidad"
                         android:textStyle="bold"
                         app:layout_constraintBottom_toTopOf="@+id/etExpireDate"
                         app:layout_constraintStart_toStartOf="@+id/etExpireDate" />
@@ -318,7 +318,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="16dp"
                 android:backgroundTint="@color/app_theme"
-                android:text="Confirm Order"
+                android:text="Confirmar pedido"
                 app:cornerRadius="10dp"
                 app:layout_constraintBottom_toBottomOf="@+id/txtAmountOrder"
                 app:layout_constraintEnd_toEndOf="parent"
