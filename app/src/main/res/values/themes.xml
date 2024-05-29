@@ -39,7 +39,53 @@
         <item name="cornerSizeTopLeft">100dp</item>
 
     </style>
+    <resources xmlns:tools="http://schemas.android.com/tools" xmlns:android="http://schemas.android.com/apk/res/android">
+        <!-- Base application theme. -->
+        <style name="Base.Theme.KonstruApp" parent="Theme.Material3.DayNight">
+            <!-- Customize your light theme here. -->
+            <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
 
+        </style>
+
+        <style name="themeTopAppBar1" parent="Theme.Material3.DayNight">
+            <item name="fontFamily">@font/hundin1451</item>
+            <item name="android:textSize">20sp</item>
+            <item name="titleTextColor">@color/orange</item>
+            <item name="android:textColor">@color/orange</item>
+            <item name="android:textAlignment">center</item>
+        </style>
+
+        <style name="border_button" parent="Theme.Material3.DayNight">
+            <item name="android:textColor">@android:color/white</item> <!--color del texto del boton-->
+            <item name="strokeColor">@color/orange</item> <!--color del borde del boton-->
+            <item name="strokeWidth">2dp</item> <!--ancho del borde del boton-->
+            <item name="android:backgroundTint">@color/white</item> <!--color de fondo del boton-->
+            <item name="shapeAppearanceOverlay">@style/ShapeAppearanceOverlay.OrangeButton</item> <!--estilo del borde del boton-->
+            <item name="fontFamily">@font/arial</item> <!--fuente del texto del boton-->
+        </style>
+
+        <style name="ShapeAppearanceOverlay.OrangeButton" parent=""> <!--estilo del borde del boton-->
+            <item name="cornerFamily">rounded</item>
+            <item name="cornerSize">8dp</item>
+        </style>
+
+        <style name="button_relleno" parent="Theme.Material3.DayNight">
+            <item name="android:textColor">@color/black</item> <!--color del texto del boton-->
+            <item name="strokeColor">@color/orange</item> <!--color del borde del boton-->
+            <item name="strokeWidth">2dp</item> <!--ancho del borde del boton-->
+            <item name="android:backgroundTint">@color/button_color</item>  <!--color de fondo del boton-->
+            <item name="shapeAppearanceOverlay">@style/ShapeAppearanceOverlay.OrangeButton</item>   <!--estilo del borde del boton-->
+            <item name="fontFamily">@font/arial</item> <!--fuente del texto del boton-->
+        </style>
+
+        <style name="BorderText" parent="Theme.Material3.DayNight">
+            <item name="android:background">@drawable/rectangle_background</item>
+            <item name="fontFamily">@font/arial</item>
+        </style>
+
+
+
+    </resources>
 
 
 
