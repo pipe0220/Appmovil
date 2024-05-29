@@ -24,8 +24,8 @@
         android:label="fragment_sign_up"
         tools:layout="@layout/fragment_sign_up" >
         <action
-            android:id="@+id/action_signUpFragment_to_productActivity2"
-            app:destination="@id/productActivity" />
+            android:id="@+id/action_signUpFragment_to_logInFragment"
+            app:destination="@id/signInFragment" />
     </fragment>
     <activity
         android:id="@+id/productActivity"
