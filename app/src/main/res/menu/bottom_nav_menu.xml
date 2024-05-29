@@ -6,25 +6,8 @@
         android:checkable="false"
 
         android:icon="@drawable/home_icon"
-        android:title="Home"
+        android:title="@string/Item_Inicio"
         android:visible="true">
-
-    </item>
-
-    <item
-        android:id="@+id/purchasedProductFragment"
-        android:enabled="true"
-        android:icon="@drawable/purchased_icon"
-
-        android:title="Purchased">
-
-    </item>
-
-    <item
-        android:id="@+id/basketFragment"
-        android:enabled="true"
-        android:icon="@drawable/basket_icon"
-        android:title="Basket">
 
     </item>
 
@@ -32,9 +15,18 @@
         android:id="@+id/accountFragment"
         android:enabled="true"
         android:icon="@drawable/account_icon"
-        android:title="Account">
+        android:title="Cuenta">
 
     </item>
+
+    <item
+        android:id="@+id/basketFragment"
+        android:enabled="true"
+        android:icon="@drawable/basket_icon"
+        android:title="Carrito">
+
+    </item>
+
 
 
 </menu>

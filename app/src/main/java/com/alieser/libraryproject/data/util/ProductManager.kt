@@ -105,7 +105,7 @@ class ProductManager {
             )
 
             db.collection("Purchased Product").document()
-                .set(purchasedProduct)// ürün başarıyla alındı vs. yazayım mı sor
+                .set(purchasedProduct)
             db.collection("Product Basket").document("${productBasket.productId}").delete()
         }
     }

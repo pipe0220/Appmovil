@@ -16,8 +16,8 @@ import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
 class SignUpFragment : Fragment() {
-    private lateinit var binding : FragmentSignUpBinding
-    private lateinit var auth : FirebaseAuth
+    private lateinit var binding: FragmentSignUpBinding
+    private lateinit var auth: FirebaseAuth
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -28,42 +28,44 @@ class SignUpFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        binding = FragmentSignUpBinding.inflate(inflater,container,false)
+        binding = FragmentSignUpBinding.inflate(inflater, container, false)
         auth = Firebase.auth
 
         binding.btnSignUp.setOnClickListener {
             val emailText = binding.etUserNameSignUp.text.toString().trim()
             val passwordText = binding.etPasswordSignUp.text.toString().trim()
 
-
-
-            if(emailText.isNotEmpty() && passwordText.isNotEmpty() && emailText.trim().length >= 2 && passwordText.trim().length >= 2) {
-
-                auth.createUserWithEmailAndPassword(emailText,passwordText)
-                    .addOnSuccessListener {
-                        // Succes olunca çağrılacak buraya Toast message verilebilir. başarıyla kayıt oldunuz diye
-                        Navigation.findNavController(binding.root).navigate(R.id.action_signUpFragment_to_logInFragment)
-                    }
-                    .addOnFailureListener {
-                        // Failure olunca çağırılacak.
-                        Toast.makeText(this@SignUpFragment.requireActivity(),it.localizedMessage,Toast.LENGTH_SHORT).show()
-                    }
-
-            } else if(emailText.isEmpty() || passwordText.isEmpty()){
-
-                Toast.makeText(this@SignUpFragment.requireActivity(),"Please enter email and password",
-                    Toast.LENGTH_SHORT).show()
-
-            } else if (emailText.length < 2 && passwordText.length < 2) {
-
-                Toast.makeText(this@SignUpFragment.requireActivity(),"Username and password cannot be less than 2 digits",
-                    Toast.LENGTH_SHORT).show()
+            if (emailText.isNotEmpty() && passwordText.isNotEmpty()) {
+                if (emailText.length >= 2 && passwordText.length >= 2) {
+                    auth.createUserWithEmailAndPassword(emailText, passwordText)
+                        .addOnSuccessListener {
+                            // Success message
+                            Navigation.findNavController(binding.root).navigate(R.id.action_signUpFragment_tologInFragment)
+                        }
+                        .addOnFailureListener {
+                            // Failure message
+                            Toast.makeText(
+                                this@SignUpFragment.requireActivity(),
+                                it.localizedMessage,
+                                Toast.LENGTH_SHORT
+                            ).show()
+                        }
+                } else {
+                    Toast.makeText(
+                        this@SignUpFragment.requireActivity(),
+                        "Username and password must be at least 2 characters long",
+                        Toast.LENGTH_SHORT
+                    ).show()
+                }
+            } else {
+                Toast.makeText(
+                    this@SignUpFragment.requireActivity(),
+                    "Please enter email and password",
+                    Toast.LENGTH_SHORT
+                ).show()
             }
         }
 
-
         return binding.root
     }
-
-
 }
