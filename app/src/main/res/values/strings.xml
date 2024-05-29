@@ -1,5 +1,4 @@
 <resources>
-    <string name="app_name">ECommerceApp</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
@@ -11,6 +10,21 @@
     <string name="dontHaveAccountText">Do not have an account?</string>
     <string name="createAccountText"> \tSign Up</string>
     <string name="signUpButton">SIGN UP</string>
+
+    <string name="app_name">KonstruApp</string>
+    <string name="Item_Inicio">Inicio</string>
+    <string name="Item_Perfil">Perfil</string>
+    <string name="Item_Carrito">Carrito</string>
+
+    <string name="TituloRl">Titulo</string>
+    <string name="TituloApp">KonstruApp</string>
+    <string name="Ingresar_email">Continuar</string>
+    <string name="Ingresar_google">Ingresar con Google</string>
+    <string name="Ingresar_facebook">Ingresar con Facebook</string>
+    <string name="Ingresar_twitter">Ingresar con Twitter</string>
+    <string name="Acceso">Acceso Rápido Con</string>
+    <string name="Politicas">Si continuas estarás confirmando que eres una persona mayorde edad y que gas leído y aceptado nuestris Términos y Condiciones Y Politicas de privacidad.</string>
+    <string name="copyright">© 2022-2025\nKonstruApp.Com.Co\nTodos Los Derechos\nReservados\nVersión 1.0</string>
 
 
 </resources>
